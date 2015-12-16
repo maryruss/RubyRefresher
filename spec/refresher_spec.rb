@@ -39,15 +39,15 @@ describe 'Refresher' do
     end
 
     it "removes an item from the end of an array" do
-      expect([1].last).to eq 1
+      expect([2,4,1].pop).to eq 1
     end
 
     it "adds an item to the front of an array" do
-      expect([1].insert(0,"banana")).to eq ["banana", 1]
+      expect([1].unshift("banana")).to eq ["banana", 1]
     end
 
     it "removes an item from the front of an array" do
-      expect([1, "banana"].first).to eq 1
+      expect([1, "banana"].shift).to eq 1
     end
   end
 
